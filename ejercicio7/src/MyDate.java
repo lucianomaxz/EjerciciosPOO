@@ -31,8 +31,7 @@ public class MyDate {
     }
 
     public boolean isValidDate(int year, int month, int day) {
-        boolean bool = false, leaper;
-        leaper = isLeapYear(year);
+        boolean bool = false;
         if (this.year > 0 && (month > 0 && month < 12) && (day > 0 && day < 32)) {
             if (year % 4 == 0) {
                 daysInMonths[1] = 29;
